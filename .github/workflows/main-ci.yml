@@ -1,4 +1,4 @@
-name: vue-template
+name: main-ci
 on:
   push:
     branches:

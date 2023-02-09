@@ -34,7 +34,8 @@ jobs:
         push: true
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
-    - name: ssh docker login
+        
+    - name: ssh login and pull Docker image 
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.TENCENT_CLOUD_IP }}
